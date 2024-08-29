@@ -1,0 +1,22 @@
+﻿<Window x:Class="WDC.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Asymmetric Encryption" Height="350" Width="525">
+    <Grid>
+        <Label Content="Select public key file:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="PublicKeyFileTextBox" HorizontalAlignment="Left" Height="23" Margin="10,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="400"/>
+        <Button x:Name="SelectPublicKeyButton" Content="Select" HorizontalAlignment="Left" Margin="415,32,0,0" VerticalAlignment="Top" Width="75" Click="SelectPublicKeyButton_Click"/>
+        <Label Content="Select private key file:" HorizontalAlignment="Left" Margin="10,65,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="PrivateKeyFileTextBox" HorizontalAlignment="Left" Height="23" Margin="10,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="400"/>
+        <Button x:Name="SelectPrivateKeyButton" Content="Select" HorizontalAlignment="Left" Margin="415,87,0,0" VerticalAlignment="Top" Width="75" Click="SelectPrivateKeyButton_Click"/>
+        <Label Content="Select input file:" HorizontalAlignment="Left" Margin="10,120,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="InputFileTextBox" HorizontalAlignment="Left" Height="23" Margin="10,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="400"/>
+        <Button x:Name="SelectInputFileButton" Content="Select" HorizontalAlignment="Left" Margin="415,142,0,0" VerticalAlignment="Top" Width="75" Click="SelectInputFileButton_Click"/>
+        <Label Content="Select output file:" HorizontalAlignment="Left" Margin="10,175,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="OutputFileTextBox" HorizontalAlignment="Left" Height="23" Margin="10,197,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="400"/>
+        <Button x:Name="SelectOutputFileButton" Content="Select" HorizontalAlignment="Left" Margin="415,197,0,0" VerticalAlignment="Top" Width="75" Click="SelectOutputFileButton_Click"/>
+        <Button x:Name="EncryptButton" Content="Encrypt" HorizontalAlignment="Left" Margin="10,240,0,0" VerticalAlignment="Top" Width="75" Click="EncryptButton_Click"/>
+        <Button x:Name="DecryptButton" Content="Decrypt" HorizontalAlignment="Left" Margin="90,240,0,0" VerticalAlignment="Top" Width="75" Click="DecryptButton_Click"/>
+        <Label x:Name="StatusMessageLabel" Content="" HorizontalAlignment="Left" Margin="10,280,0,0" VerticalAlignment="Top" Width="500"/>
+    </Grid>
+</Window>
